@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .outermain {
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
+    background-image: linear-gradient(rgb(198, 42, 198), rgb(218, 75, 75), rgb(218, 218, 63));
+    border-radius: 100%;
+    border: 1px solid rgb(50, 19, 19);
+    animation: anim 5s infinite linear;
+  }
+  .sub {
+    height: 50px;
+    width: 50px;
+    margin: inherit;
+    background-color: rgb(225, 84, 98);
+   
+    border-radius: 100%;
+    background-image: linear-gradient(rgb(198, 42, 198), rgb(218, 75, 75), rgb(218, 218, 63));
+    border: 1px solid rgb(60, 10, 19);
+    animation: anime 5s infinite linear;
+  }
+  @keyframes anim {
+    from {
+      transform: scale(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes anime {
+    from {
+      transform: scale(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+</style>
+
+<body>
+  <div class="outermain">
+    <div>
+      <div class="sub">
+        hello
+      </div>
+    </div>
+  </div>
+</body>
+</html>
